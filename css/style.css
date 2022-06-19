@@ -453,6 +453,7 @@ footer button.mypage i {
   height: 40px;
   justify-content: start;
   align-items: center;
+  overflow-x: scroll;
 }
 .tab-list button {
   flex: 1;
