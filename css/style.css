@@ -103,6 +103,7 @@ header h1 {
   font-size: 0;
   background: url(../images/ic-search.png) center center no-repeat;
   background-size: 30px;
+  margin-left: 10px;
 }
 
 .sidepanel {
