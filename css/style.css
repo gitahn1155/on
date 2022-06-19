@@ -485,7 +485,7 @@ footer button.mypage i {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  height: 50px;
+  height: 52px;
   display: -webkit-box;
   -webkit-line-clamp: 1; /* 라인수 */
   -webkit-box-orient: vertical;
@@ -972,6 +972,7 @@ footer button.mypage i {
   width: 80px;
   text-align: center;
   margin-left: 10px;
+  margin-top: 10px;
 }
 .around-list ul li .category {
   font-size: 12px;
