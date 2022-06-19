@@ -195,8 +195,15 @@ input[type="file"] {
   border: none;
 }
 input[type="radio"],
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
   border: none;
+  -webkit-border-radius:0;
+  -webkit-appearnce:none;
 }
 button {
   text-transform: none;

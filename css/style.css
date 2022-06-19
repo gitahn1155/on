@@ -16,12 +16,18 @@ body {
   height: 100%;
   word-spacing: -2px;
   letter-spacing: -0.45px;
-  border: 1px solid pink;
 }
 
 #wrap {
+  
   height: calc(100vh - 80px);
   overflow-y: auto;
+}
+@media screen and (min-width: 820px) {
+	#wrap {
+    max-width: 750px;
+    margin: 0 auto;
+	}
 }
 
 header {
@@ -73,14 +79,17 @@ header h1 {
   height: 50px;
   border-radius: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 0 10px;
+  background-color: #fff;
+  overflow: hidden;
 }
 .search-wrap input[type="search"] {
   height: 35px;
   border: none;
   flex: 1;
+  appearance: none;
 }
 .search-wrap input[type="search"]:focus {
   border: none;
@@ -310,7 +319,7 @@ header h1 {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: -30px;
+  right: -34px;
   top: 10px;
   font-size: 0;
   text-indent: -9999px;
@@ -389,7 +398,7 @@ footer.fixed {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  height: 80px;
+  height: 70px;
   padding: 0 20px;
   position: fixed;
   left: 0;
@@ -403,11 +412,13 @@ footer button {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 12px;
 }
 footer button i {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 5px;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0;
+  font-size: 12px;
 }
 
 footer button.on {
@@ -416,23 +427,23 @@ footer button.on {
 
 footer button.home i {
   background: url(../images/ic-foot-01.png) center center no-repeat;
-  background-size: 40px;
+  background-size: 30px;
 }
 footer button.pay i {
   background: url(../images/ic-foot-02.png) center center no-repeat;
-  background-size: 40px;
+  background-size: 30px;
 }
 footer button.talk i {
   background: url(../images/ic-foot-03.png) center center no-repeat;
-  background-size: 40px;
+  background-size: 30px;
 }
 footer button.mall i {
   background: url(../images/ic-foot-04.png) center center no-repeat;
-  background-size: 40px;
+  background-size: 30px;
 }
 footer button.mypage i {
   background: url(../images/ic-foot-05.png) center center no-repeat;
-  background-size: 40px;
+  background-size: 30px;
 }
 
 /*tab-list*/
@@ -467,24 +478,25 @@ footer button.mypage i {
   border-bottom: 8px solid #eee;
 }
 .news-list ul li a {
-  padding: 10px 20px;
+  padding: 13px 20px;
   font-size: 16px;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: -webkit-box;
   -webkit-line-clamp: 1; /* 라인수 */
   -webkit-box-orient: vertical;
   word-wrap: break-word;
-  line-height: 28px;
+  line-height: 32px;
   border-bottom: 1px solid #dcdcdc;
 }
 .news-list ul li:first-child a {
   background-color: #f2f2f2;
   color: #000;
   font-weight: 600;
+  line-height: 33px;
 }
 
 /*weather-wrap*/
@@ -883,6 +895,7 @@ footer button.mypage i {
 .notice-wrap {
   border-bottom: 8px solid #eee;
   padding: 10px;
+  padding-bottom: 0;
 }
 .notice-wrap ul li {
   padding: 10px 0;
@@ -997,7 +1010,8 @@ footer button.mypage i {
 
 /*event-list*/
 .event-list ul li {
-  padding: 10px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #dadada;
 }
 .event-list ul li button {
   height: 80px;
@@ -1054,6 +1068,7 @@ footer button.mypage i {
   line-height: 18px;
   text-align: left;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 /*detail-view*/
