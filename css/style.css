@@ -90,6 +90,7 @@ header h1 {
   border: none;
   flex: 0 0 88%;
   appearance: none;
+  border: 1px solid red;
 }
 .search-wrap input[type="search"]:focus {
   border: none;
