@@ -88,7 +88,8 @@ header h1 {
 .search-wrap input[type="search"] {
   height: 35px;
   border: none;
-  flex: 0 0 88%;
+  /* flex: 0 0 88%; */
+  width: 88%;
   appearance: none;
   border: 1px solid red;
 }
