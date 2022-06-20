@@ -204,6 +204,8 @@ input[type="email"] {
   border: none;
   -webkit-border-radius:0;
   -webkit-appearnce:none;
+  appearance: none;
+  border-radius: 0;
 }
 button {
   text-transform: none;
