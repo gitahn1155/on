@@ -44,11 +44,46 @@
       <section class="">
         <div class="photo-detail-view">
           <div class="photo">
-            <img
-              src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
-              alt=""
-            />
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
+
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
 
           <div class="tit">
             심재훈 오주현 기자 = 김주현 금융위원장 후보자가 첫 출근길에 취재진을
